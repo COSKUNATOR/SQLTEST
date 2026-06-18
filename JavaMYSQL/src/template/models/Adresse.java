@@ -10,7 +10,7 @@ public class Adresse {
     private String strassenr;
     private String plz;
     private String ort;
-    private Kunde kunde;
+    private final Kunde kunde;
 
     public Adresse(int nummer, String strassenr, String plz, String ort, Kunde kunde){
         this.id = nummer;
@@ -54,9 +54,6 @@ public class Adresse {
         return kunde;
     }
 
-    public void setKunde(Kunde kunde) {
-        this.kunde = kunde;
-    }
 
     @Override
     public String toString() {

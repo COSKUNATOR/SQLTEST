@@ -13,9 +13,6 @@ public class Onlineshop {
             BestellpositionService.selectBestellposition();
 
 
-            for (Hersteller h : Hersteller.hersteller.values()){
-                System.out.println(h);
-            }
 
             for(Artikel a : Artikel.artikel.values()){
                 System.out.println(a);
@@ -33,8 +30,25 @@ public class Onlineshop {
                 System.out.println(b);
             }
 
-            for (Bestellposition b : Bestellposition.bestellpositionen)
+            for (Bestellposition b : Bestellposition.bestellpositionen){
                 System.out.println(b);
+            }
+
+            Hersteller hersteller = null;
+            // HerstellerService.createHersteller("IHK");
+            for (Hersteller h : Hersteller.hersteller.values()){
+                if(h.getNummer() == 4){
+                    hersteller = h;
+                }
+            }
+
+            if(HerstellerService.updateHersteller(hersteller, "name", "bambule")){
+                System.out.println("Name wurde aktualisiert ");
+                for (Hersteller h : Hersteller.hersteller.values()){
+                    System.out.println(h);
+                }
+            }
+
         }
 
         // letzter Block in MySQL.java und wie der Link funktioniert fragen
