@@ -10,6 +10,8 @@ public class Onlineshop {
             KundeService.selectKunde();
             AdresseService.selectAdresse();
             BestellungService.selectBestellung();
+            BestellpositionService.selectBestellposition();
+
 
             for (Hersteller h : Hersteller.hersteller.values()){
                 System.out.println(h);
@@ -30,6 +32,9 @@ public class Onlineshop {
             for(Bestellung b : Bestellung.bestellung.values()){
                 System.out.println(b);
             }
+
+            for (Bestellposition b : Bestellposition.bestellpositionen)
+                System.out.println(b);
         }
 
         // letzter Block in MySQL.java und wie der Link funktioniert fragen
