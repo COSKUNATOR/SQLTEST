@@ -4,6 +4,7 @@
     <modules>
       <module fileurl="file://$PROJECT_DIR$/JavaMYSQL/JavaMYSQL.iml" filepath="$PROJECT_DIR$/JavaMYSQL/JavaMYSQL.iml" />
       <module fileurl="file://$PROJECT_DIR$/OOP3.iml" filepath="$PROJECT_DIR$/OOP3.iml" />
+      <module fileurl="file://$PROJECT_DIR$/TESTPRUEFUNG/TESTPRUEFUNG.iml" filepath="$PROJECT_DIR$/TESTPRUEFUNG/TESTPRUEFUNG.iml" />
     </modules>
   </component>
 </project>
